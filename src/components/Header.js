@@ -23,7 +23,7 @@ const Header = ({isMenuOpen, setIsMenuOpen}) => {
             <div className="header__rigth">
                 <p>Tesla Account</p>
                 <div className="menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    {isMenuOpen ? <MenuIcon/>: <CloseMenuIcon/>}
+                    {isMenuOpen ? <CloseMenuIcon/>: <MenuIcon/>}
                 </div>
                 <div className={`header__rigth__menu ${!isMenuOpen &&("header__rigth__menu__toggle")}`}>
                     <p>INVENTARIO EXISTENTE</p>
