@@ -3,21 +3,25 @@ import './css/Header.css'
 import TeslaLogo from '../assets/teslaLogoSmall.svg'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseMenuIcon from '@material-ui/icons/Close'
+import {Link} from 'react-router-dom'
+import { useState } from 'react/cjs/react.development';
 
-const Header = ({isMenuOpen, setIsMenuOpen}) => {
+const Header = () => {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <div className="header">
             <div className="header__logo">
-                <img src={TeslaLogo} alt=""/>
+                <Link to="/"><img src={TeslaLogo} alt=""/></Link>
             </div>
 
             <div className="header__center">
-                <p>Model 5</p>
-                <p>Model 3</p>
-                <p>Model X</p>
-                <p>Model Y</p>
-                <p>Solar Roof</p>
-                <p>Solar Panel</p>
+                <a href='/model-s'>Model S</a>
+                <a href='/model-3'>Model 3</a>
+                <a href='/model-X'>Model X</a>
+                <a href='/model-Y'>Model Y</a>
+                <a href='#'>Solar Roof</a>
+                <a href='#'>Solar Panel</a>
             </div>
 
             <div className="header__rigth">
@@ -25,7 +29,7 @@ const Header = ({isMenuOpen, setIsMenuOpen}) => {
                 <div className="menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? <CloseMenuIcon/>: <MenuIcon/>}
                 </div>
-                <div className={`header__rigth__menu ${!isMenuOpen &&("header__rigth__menu__toggle")}`}>
+                <div className={`header__rigth__menu ${isMenuOpen &&("header__rigth__menu__toggle")}`}>
                     <p>INVENTARIO EXISTENTE</p>
                     <p>INVENTARIO USADO</p>
                     <p>ROADSTER</p>
