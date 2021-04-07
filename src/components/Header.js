@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './css/Header.css'
 import TeslaLogo from '../assets/teslaLogoSmall.svg'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseMenuIcon from '@material-ui/icons/Close'
 import {Link} from 'react-router-dom'
-import { useState } from 'react/cjs/react.development';
+
 
 const Header = () => {
 
