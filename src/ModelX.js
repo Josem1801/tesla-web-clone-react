@@ -1,6 +1,6 @@
 import React from 'react'
 import Item from './components/Item'
-import ModelSImg from './assets/Desktop-ModelX.jpeg'
+import ModelXImg from './assets/Desktop-ModelX.jpeg'
 
 function ModelX() {
   return (
@@ -9,7 +9,7 @@ function ModelX() {
           title='Model X'
           desc='Plait'
           descLink=''
-          backgroundImg={ModelSImg}
+          backgroundImg={ModelXImg}
           leftBtnText= 'ORDEN PERSONLIZADA'
           leftBtnLink=''
           rigthBtnTxt='INVENTARIOS DE AUTOS NUEVOS'
