@@ -6,7 +6,7 @@ function ModelY() {
   return (
     <>
       <Item
-      title='Model S'
+      title='Model Y'
       desc='Visite una tienda'
       descLink=''
       backgroundImg={ModelYImg}
