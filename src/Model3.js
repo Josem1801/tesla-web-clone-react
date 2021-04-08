@@ -6,7 +6,7 @@ function Model3() {
   return (
     <>
       <Item
-      title='Model S'
+      title='Model 3'
       desc='Visite una tienda'
       descLink=''
       backgroundImg={Model3Img}
