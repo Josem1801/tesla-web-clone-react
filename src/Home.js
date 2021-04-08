@@ -45,25 +45,13 @@ function Home() {
           title='Model X'
           desc='Visite una tienda'
           descLink=''
-          backgroundImg={ModelSImg}
-          leftBtnText= 'ORDEN PERSONLIZADA'
-          leftBtnLink=''
-          rigthBtnTxt='INVENTARIOS DE AUTOS NUEVOS'
-          rigthBtnLink=''
-          twoButtons='true'
-        />
-
-        <Item
-          title='Model Y'
-          desc='Visite una tienda'
-          descLink=''
           backgroundImg={ModelXImg}
           leftBtnText= 'ORDEN PERSONLIZADA'
           leftBtnLink=''
           rigthBtnTxt='INVENTARIOS DE AUTOS NUEVOS'
           rigthBtnLink=''
           twoButtons='true'
-        />  
+        />
 
         <Item
           title='Model Y'
@@ -75,8 +63,8 @@ function Home() {
           rigthBtnTxt='INVENTARIOS DE AUTOS NUEVOS'
           rigthBtnLink=''
           twoButtons='true'
-        />
-
+        />  
+    
         <Item
           title='Accesorios'
           desc='Visite una tienda'
